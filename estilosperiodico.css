@@ -1,0 +1,61 @@
+body {
+	background : #C0D9D9;
+	font : 8pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #666666;
+	margin : 20px 0px 20px 0px;
+	padding : 0px;
+	text-align: center;
+}
+
+#contenedor{
+box-shadow: 10px 10px 5px #ccc;
+width: 700px;
+height: 1050px;
+margin: 0 auto;
+border: #666 1px solid;
+border-radius: 10px;
+background-color:#A9F5D0;
+text-align: left;
+}
+
+.oculto {display: none;}
+.visible { display: block; }
+
+#menu-horizontal {
+padding : 5px 10px 5px 10px;
+border-top : 1px solid #cccccc;
+border-bottom : 1px solid #cccccc;
+background-color:#F5D0A9;
+}
+
+ul li a {
+   text-decoration: none; 
+   color:#ffffff
+}
+
+ a:hover,  li :active{
+    background: red;
+}
+
+#cabecera { background-image: url("LMP.jpg"); height: 210px; border-radius: 10px; box-shadow: 10px 10px 5px #ccc; 
+           padding-top: 20px; }
+
+#pie{
+padding: .9em 0; margin-top: 1em; border-top: 1px solid #C5C5C5; border-bottom: 1px solid #C5C5C5;
+       background:#F5D0A9 ; color: #555; font-size: .90em;
+clear: both;
+height: 90px;
+}
+
+ul#galeria { list-style: none; }
+ul#galeria li { float:left; }
+ul#galeria li img {
+  width: 125px;
+  border: 2px solid #fff;
+  opacity: 0.5; }
+ul#galeria img:hover {
+  opacity: 1;
+  z-index:100;
+  -moz-transform:scale(2);
+  -webkit-transform:scale(2); }
+ul#galeria li:nth-child(4n) { float: none; }

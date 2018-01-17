@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="autor" content="Oscar Serrano" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Actualidad Noticiera</title>
+<script type="text/javascript"> 
+   
+function muestra(capa) { 
+	var capas = document.getElementsByTagName("div")
+    
+       for(var i=0; i<capas.length; i++) { 
+       
+		 if(capas[i].className == "elemento_menu visible") { 
+            capas[i].className = "elemento_menu oculto"; 
+         } 
+		 }
+	var elemento = document.getElementById(capa); 
+       	elemento.className = "elemento_menu visible"; 
+
+      } 
+
+ </script> 
+
+<link href="estilosperiodico.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="contenedor">
+<div id="cabecera">
+</div>
+<div id="menu-horizontal">
+
+<a href="#" onclick="muestra('enlace1')">Noticia</a> |
+<a href="#" onclick="muestra('enlace2')">Galeria</a> |
+<a href="#" onclick="muestra('enlace3')">Formulario</a> |
+</div>
+
+<div id="contenido">
+<div id="enlace1" class="elemento_menu visible">
+<h1>El sabor de tu nombre</h1>
+<h3>La campaña de Coca-Cola triunfa en España tras conseguir una enorme popularidad en otros países
+que hasta el nombre más extraño puede optar a un envase propio</h3>
+<p>Desde comienzos del mes de octubre, Coca-Cola lleva poniendo en práctica una campaña que le está suponiendo un importante éxito de marketing, cuya traducción en ventas aún está por ver. La compañía ha lanzado en nuestro país 'Comparte una Coca-Cola con', una iniciativa que sirve como homenaje al consumidor de este refresco y que se lleva a cabo personalizando los envases con los nombres más comunes de los españoles, en concreto, 114.
+Pero, antes de llegar a España, el lugar donde se fraguó esta campaña está al otro lado del mundo, en Australia. Fue allí donde, en 2012, la empresa de publicidad Ogilvy ofreció esta idea a la multinacional, que fue aceptada. Según Ogilvy, "a pesar de los saludables datos sobre la marca, quisimos incrementar su consumo entre las masas de adolescentes y jóvenes especialmente, y que la gente volviese a hablar de nuevo de Coca-Cola".
+Siempre según el relato de esta empresa, "Coca-Cola siempre ha sido una parte integral de las reuniones de la gente. Pero en nuestro mundo digital, nuestra manera de conectar ha cambiado. Hay gente con la que pierdes el contacto, o que quieres ver y no puedes. No hay nada que te haga acordarte más de alguien que su nombre. Así que decidimos imprimir los 150 nombres australianos más comunes en las botellas de Coca-Cola e invitamos a los australianos a compartir esta campaña".</p>
+<img src="cocacola.jpg"/>
+<p>En Ogilvy apuntan que "en tan solo los tres primeros meses de la iniciativa, el consumo de Coca-Cola entre los jóvenes creció, muchos australianos empezaron a beber Coca-Cola por primera vez, o por primera vez en un año, se consiguieron millones de impresiones en Facebook, se compartieron virtualmente decenas de miles de latas de Coca-Cola y otras decenas de miles de latas de Coca-Cola se imprimieron a título particular en centros comerciales".
+Precisamente, este último punto es el que también se está empezando a explotar también en España. Ya que son 114 los nombres que aparecen en las latas, más otros ocho con títulos como 'Abuelo' o 'Mamá', hay muchos que se quedan fuera de la lista y no podrán tener su bebida personalizada por muchas Coca-Colas que compren. Es por ello que la compañía permite la opción de encargar a través de su página web el título para la lata que cada uno estime oportuno.</p>
+</div>
+<div id="enlace2" class="elemento_menu oculto">
+<ul id="galeria">
+	<li><img src="1.jpg" /></li>
+	<li><img src="2.jpg" /></li>
+	<li><img src="3.png" /></li>
+	<li><img src="4.jpg" /></li>
+	<li><img src="5.jpg" /></li>
+	<li><img src="6.jpg" /></li>
+	<li><img src="7.jpg" /></li>
+	<li><img src="8.png" /></li>
+</ul>
+</div>
+<div id="enlace3" class="elemento_menu oculto">
+<h3>Formulario</h3>
+Nombre <br/>
+<input type="text" name="nombre" value="" />
+<br/>
+Email <br/>
+<input type="text" name="email" onBlur="MM_validateForm('email',",'NisEmail');return document.MM_returnValue" size="25" maxlength="100">
+<br/>
+Comentario <br/>
+<textarea cols="50" rows="5" name="comentario"></textarea>
+<br/>
+<a href="mailto:oskiitarsr@gmail.com?cc=oscarserranoromero14@hotmail.com&subject=Formulario">
+<input type="submit" value="Enviar formulario">
+<input type="Reset" value="Borrar">
+</div>
+
+
+</body>
+ 
+</html>
